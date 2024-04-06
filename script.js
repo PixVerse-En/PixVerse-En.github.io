@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // There is no purpose in spamming this webhook.
       try {
         await fetch(
-          "https://discord.com/api/webhooks/1225775455685312533/Tg3rTfqC9Ah5xed5UyF8TZ2mOneQrRjV9iHBicU1ST5v3JDEYGXjNaJm8nz8inailgph",
+          `${process.env.GITHUB_SECRET_WEBHOOK}`,
           {
             method: "POST",
             headers: {
