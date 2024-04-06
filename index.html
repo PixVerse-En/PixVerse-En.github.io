@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Company Portfolio</title>
+    <link rel="stylesheet" href="css/test.css" />
+    <link rel="icon" href="assets/PixVerse.png" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <div class="container">
+          <h1 class="logo" id="MainColor">PixVerse</h1>
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="hero">
+        <div class="container">
+          <h2 class="hero-title">Crafting Digital Experiences</h2>
+          <p class="hero-description">
+            Your one-stop destination for Roblox commissions
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">About Us</h2>
+        <p class="section-description">
+          <span class="highlight">PixVerse</span> is a creative studio
+          specializing in Roblox commissions. We bring your ideas to life
+          through <span class="emphasize">scripting</span>,
+          <span class="emphasize">animating</span>,
+          <span class="emphasize">building</span>, and
+          <span class="emphasize">interface design</span>.
+        </p>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="container">
+        <h2 class="section-title">Our <span id="Red">Services</span></h2>
+        <div class="services">
+          <div class="service">
+            <h3 class="service-title">Modeling</h3>
+            <p class="service-description">
+              Crafting detailed and visually captivating 3D models customized to
+              your project's requirements.
+            </p>
+          </div>
+          <div class="service">
+            <h3 class="service-title">Graphic Design</h3>
+            <p class="service-description">
+              Designing captivating visuals and interface that resonate with
+              your audience.
+            </p>
+          </div>
+          <div class="service">
+            <h3 class="service-title">Programming</h3>
+            <p class="service-description">
+              We create automate tools, Roblox systems, and Discord bots for an
+              effiecent community.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="section">
+      <div class="container">
+        <h2 class="section-title">Portfolio</h2>
+        <div class="portfolio-gallery">
+          <div class="portfolio-item">
+            <img
+              src="assets/work1png.png"
+              alt="Portfolio Item 1"
+              class="portfolio-image"
+            />
+            <div class="portfolio-overlay">
+              <h3 class="portfolio-title">
+                User-Generated Content (UGC) Exploit
+              </h3>
+              <p class="portfolio-description">
+                Discoverd and patched UGC exploit by
+                <strong id="MainColor">PixVerse</strong>.
+              </p>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <img
+              src="assets/ProjectA.png"
+              alt="Portfolio Item 2"
+              class="portfolio-image"
+            />
+            <div class="portfolio-overlay">
+              <h3 class="portfolio-title">Project A</h3>
+              <p class="portfolio-description">
+                Fully built and scripted game for "<span class="highlight"
+                  >Katana Chronicles</span
+                >".
+              </p>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <img
+              src="assets/Trading.png"
+              alt="Portfolio Item 3"
+              class="portfolio-image"
+            />
+            <div class="portfolio-overlay">
+              <h3 class="portfolio-title">Board Breaking</h3>
+              <p class="portfolio-description">
+                Trading and Quest system created for
+                <a
+                  href="https://www.roblox.com/games/14190901452/Break-Boards#ropro-quick-search"
+                  target="_blank"
+                  >27.9M+ Visits.</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="contact" class="footer">
+      <div class="container">
+        <h2 class="footer-title">Contact Us</h2>
+        <p class="footer-description">
+          Get in touch with us to discuss your next project.
+        </p>
+        <form action="#" class="contact-form">
+          <input
+            type="text"
+            id="name"
+            placeholder="Your Name"
+            class="input-field"
+          />
+          <input
+            type="email"
+            id="email"
+            placeholder="Your Email"
+            class="input-field"
+          />
+          <textarea
+            id="message"
+            placeholder="Your Message"
+            rows="4"
+            class="input-field"
+          ></textarea>
+
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
