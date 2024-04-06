@@ -40,7 +40,6 @@ document.addEventListener("DOMContentLoaded", function () {
           },
         ],
       };
-      // There is no purpose in spamming this webhook.
       try {
         await fetch(
           `${process.env.GITHUB_SECRET_WEBHOOK}`,
