@@ -107,54 +107,45 @@ a:hover {
   text-align: center;
 }
 
-.portfolio-gallery {
+.portfolio-text {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .portfolio-item {
-  position: relative;
-  flex-basis: calc(33.33% - 20px);
+  flex-basis: calc(50% - 20px); 
+  background-color: #f9f9f9;
+  padding: 20px;
   margin-bottom: 20px;
-}
-
-.portfolio-image {
-  width: 100%;
-  height: 100%;
   border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
 
-.portfolio-item:hover .portfolio-image {
-  transform: scale(1.1);
+.portfolio-item:hover {
+  transform: translateY(-5px);
 }
 
-.portfolio-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  border-radius: 20px;
+.portfolio-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333; 
 }
 
-.portfolio-item:hover .portfolio-overlay {
-  opacity: 1;
-}
-
-.portfolio-title,
 .portfolio-description {
-  color: #fff;
-  max-width: 300px;
+  font-size: 16px;
+  color: #666; 
+  line-height: 1.5;
 }
+
+.portfolio-description::before {
+  content: '\2022'; 
+  color: #e96053; 
+  margin-right: 5px;
+}
+
+
 
 .footer {
   background-color: #333;
