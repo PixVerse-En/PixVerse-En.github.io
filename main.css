@@ -83,14 +83,16 @@ a:hover {
   text-align: center;
 }
 
+/* Existing CSS styles */
+
 .services {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .service {
-  flex-basis: calc(33.33% - 40px);
+  flex-basis: calc(25% - 40px);
   background-color: #f9f9f9;
   padding: 20px;
   margin-bottom: 20px;
@@ -98,13 +100,21 @@ a:hover {
 }
 
 .service-title {
-  font-size: 24px;
+  font-size: 20px;
   margin-bottom: 10px;
+  color: #333;
 }
 
 .service-description {
-  font-size: 16px;
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+}
+
+.section-title {
   text-align: center;
+  margin-bottom: 40px;
+  font-size: 32px;
 }
 
 .portfolio-text {
@@ -114,7 +124,7 @@ a:hover {
 }
 
 .portfolio-item {
-  flex-basis: calc(50% - 20px); 
+  flex-basis: calc(50% - 20px);
   background-color: #f9f9f9;
   padding: 20px;
   margin-bottom: 20px;
@@ -130,22 +140,20 @@ a:hover {
 .portfolio-title {
   font-size: 24px;
   margin-bottom: 10px;
-  color: #333; 
+  color: #333;
 }
 
 .portfolio-description {
   font-size: 16px;
-  color: #666; 
+  color: #666;
   line-height: 1.5;
 }
 
 .portfolio-description::before {
-  content: '\2022'; 
-  color: #e96053; 
+  content: "\2022";
+  color: #e96053;
   margin-right: 5px;
 }
-
-
 
 .footer {
   background-color: #333;
